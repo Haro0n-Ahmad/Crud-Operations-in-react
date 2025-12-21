@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-react-app</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Visible fallback to help diagnose load failures.
+      try {
+        const root = document.getElementById('root');
+        if (root) {
+          const fallback = document.createElement('div');
+          fallback.id = 'app-fallback';
+          fallback.style.cssText = 'color: #fa5252; padding: 1rem; font-family: sans-serif; background: #fff3f3; position:fixed; top:0; left:0; right:0; z-index:9999; text-align:center;';
+          fallback.textContent = 'If this banner is visible the app JavaScript did not execute. Open DevTools → Console for errors.';
+          root.appendChild(fallback);
+        }
+      } catch (e) {
+        // ignore
+      }
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
