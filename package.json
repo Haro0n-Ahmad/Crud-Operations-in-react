@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "lucide-react": "^0.562.0",
+>>>>>>> temp-work
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
